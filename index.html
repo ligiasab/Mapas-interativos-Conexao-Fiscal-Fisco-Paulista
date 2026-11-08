@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veja o seu município · Mapas per capita de ISS e ICMS</title>
+<meta name="description" content="ISS e cota-parte do ICMS por habitante, 2025, município a município: SP, RJ, MG, BA e PR. Lígia Regina Sabaraense.">
+<meta property="og:title" content="Veja o seu município · ISS e ICMS por habitante">
+<meta property="og:description" content="Mapas interativos de SP, RJ, MG, BA e PR, ano de 2025.">
+<meta property="og:image" content="https://ligiasab.github.io/Mapas-interativos-Conex-o-Fiscal---Fisco-Paulista/preview.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root { --navy:#011D30; --red:#BF0C1A; --lb:#C9D3DF; --mut:#4A5D74; --bg:#F2F4F7; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--navy);
+         font-family:Aptos, "Segoe UI", Inter, system-ui, -apple-system, sans-serif; }
+  main { max-width:1400px; margin:0 auto; padding:24px; }
+  .slide { position:relative; width:100%; aspect-ratio:16/9; border-radius:14px; overflow:hidden;
+           box-shadow:0 10px 40px rgba(1,29,48,.12); background:var(--bg); }
+  .slide img { display:block; width:100%; height:100%; }
+  .slide a { position:absolute; width:7.875%; height:5.067%; border-radius:999px;
+             transition:box-shadow .15s, transform .15s; }
+  .slide a:hover, .slide a:focus-visible { box-shadow:0 0 0 3px rgba(191,12,26,.35); transform:translateY(-1px); outline:none; }
+  .c1 { left:33.376%; } .c2 { left:42.226%; }
+  .r1 { top:48.667%; } .r2 { top:58%; } .r3 { top:67.333%; } .r4 { top:76.667%; } .r5 { top:86%; }
+
+  /* lista para telas pequenas, onde os botões do slide ficam miúdos */
+  .lista { display:none; margin-top:20px; }
+  .lista h2 { font-size:15px; letter-spacing:.2em; color:var(--red); margin:0 0 12px; }
+  .uf { display:flex; align-items:center; gap:10px; background:#fff; border:1px solid var(--lb);
+        border-radius:999px; padding:8px 8px 8px 18px; margin-bottom:10px; }
+  .uf strong { flex:1; font-size:16px; } .uf strong span { color:var(--red); margin-right:6px; }
+  .uf a { text-decoration:none; font-weight:700; font-size:14px; padding:9px 16px; border-radius:999px; }
+  .iss { color:var(--navy); border:1.5px solid var(--navy); background:#fff; }
+  .icms { color:#fff; background:var(--red); border:1.5px solid var(--red); }
+  footer { text-align:center; color:var(--mut); font-size:13px; margin:22px 0 8px; }
+  footer a { color:var(--navy); }
+  @media (max-width:760px) { main { padding:12px; } .lista { display:block; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="slide">
+    <img src="slide.jpg" width="2667" height="1500"
+         alt="Veja o seu município: ISS e cota-parte do ICMS por habitante, 2025, em SP, RJ, MG, BA e PR. O celular mostra o mapa do ICMS per capita de São Paulo, com Paulínia em destaque: R$ 14.420,99 por habitante, 1º no estado.">
+    <a class="c1 r1" href="https://ligiasab.github.io/ISSQN-Per-capita-2025-SP/" title="Mapa de ISS per capita, São Paulo" aria-label="ISS São Paulo"></a>
+    <a class="c2 r1" href="https://ligiasab.github.io/Repasse-per-capita-ICMS-SP-2025/" title="Mapa de ICMS per capita, São Paulo" aria-label="ICMS São Paulo"></a>
+    <a class="c1 r2" href="https://ligiasab.github.io/ISS-per-capita-RJ/" title="Mapa de ISS per capita, Rio de Janeiro" aria-label="ISS Rio de Janeiro"></a>
+    <a class="c2 r2" href="https://ligiasab.github.io/ICMS-Rio-de-Janeiro/" title="Mapa de ICMS per capita, Rio de Janeiro" aria-label="ICMS Rio de Janeiro"></a>
+    <a class="c1 r3" href="https://ligiasab.github.io/Mapa-ISS-per-capita-MG-2025/" title="Mapa de ISS per capita, Minas Gerais" aria-label="ISS Minas Gerais"></a>
+    <a class="c2 r3" href="https://ligiasab.github.io/Mapa-ICMS-per-capita-MG-2025/" title="Mapa de ICMS per capita, Minas Gerais" aria-label="ICMS Minas Gerais"></a>
+    <a class="c1 r4" href="https://ligiasab.github.io/Mapa-ISS-per-capita-Bahia/" title="Mapa de ISS per capita, Bahia" aria-label="ISS Bahia"></a>
+    <a class="c2 r4" href="https://ligiasab.github.io/Mapa-ICMS-per-capita-Bahia-2025/" title="Mapa de ICMS per capita, Bahia" aria-label="ICMS Bahia"></a>
+    <a class="c1 r5" href="https://ligiasab.github.io/Mapa-per-capita-ISS-Parana-2025/" title="Mapa de ISS per capita, Paraná" aria-label="ISS Paraná"></a>
+    <a class="c2 r5" href="https://ligiasab.github.io/Mapa-per-capita-ICMS-repasses-Paran-2025/" title="Mapa de ICMS per capita, Paraná" aria-label="ICMS Paraná"></a>
+  </div>
+
+  <section class="lista" aria-label="Mapas por estado">
+    <h2>MAPAS INTERATIVOS</h2>
+    <div class="uf"><strong><span>SP</span>São Paulo</strong>
+      <a class="iss" href="https://ligiasab.github.io/ISSQN-Per-capita-2025-SP/">ISS ↗</a>
+      <a class="icms" href="https://ligiasab.github.io/Repasse-per-capita-ICMS-SP-2025/">ICMS ↗</a></div>
+    <div class="uf"><strong><span>RJ</span>Rio de Janeiro</strong>
+      <a class="iss" href="https://ligiasab.github.io/ISS-per-capita-RJ/">ISS ↗</a>
+      <a class="icms" href="https://ligiasab.github.io/ICMS-Rio-de-Janeiro/">ICMS ↗</a></div>
+    <div class="uf"><strong><span>MG</span>Minas Gerais</strong>
+      <a class="iss" href="https://ligiasab.github.io/Mapa-ISS-per-capita-MG-2025/">ISS ↗</a>
+      <a class="icms" href="https://ligiasab.github.io/Mapa-ICMS-per-capita-MG-2025/">ICMS ↗</a></div>
+    <div class="uf"><strong><span>BA</span>Bahia</strong>
+      <a class="iss" href="https://ligiasab.github.io/Mapa-ISS-per-capita-Bahia/">ISS ↗</a>
+      <a class="icms" href="https://ligiasab.github.io/Mapa-ICMS-per-capita-Bahia-2025/">ICMS ↗</a></div>
+    <div class="uf"><strong><span>PR</span>Paraná</strong>
+      <a class="iss" href="https://ligiasab.github.io/Mapa-per-capita-ISS-Parana-2025/">ISS ↗</a>
+      <a class="icms" href="https://ligiasab.github.io/Mapa-per-capita-ICMS-repasses-Paran-2025/">ICMS ↗</a></div>
+  </section>
+
+  <footer>Lígia Regina Sabaraense · Auditora Fiscal da Receita Estadual de São Paulo</footer>
+</main>
+</body>
+</html>
