@@ -34,6 +34,14 @@
   .uf a { text-decoration:none; font-weight:700; font-size:14px; padding:9px 16px; border-radius:999px; }
   .iss { color:var(--navy); border:1.5px solid var(--navy); background:#fff; }
   .icms { color:#fff; background:var(--red); border:1.5px solid var(--red); }
+  .podcast { display:flex; align-items:center; justify-content:center; gap:22px; flex-wrap:wrap;
+             margin:24px auto 0; max-width:720px; padding:14px 26px; background:#fff;
+             border:1px solid var(--lb); border-radius:999px; text-decoration:none; color:var(--navy);
+             font-size:17px; transition:box-shadow .15s, transform .15s; }
+  .podcast:hover { box-shadow:0 6px 22px rgba(1,29,48,.12); transform:translateY(-1px); }
+  .podcast img { height:64px; width:auto; }
+  .podcast strong { color:var(--red); }
+  @media (max-width:760px) { .podcast { border-radius:18px; text-align:center; font-size:15px; } }
   footer { text-align:center; color:var(--mut); font-size:13px; margin:22px 0 8px; }
   footer a { color:var(--navy); }
   @media (max-width:760px) { main { padding:12px; } .lista { display:block; } }
@@ -74,6 +82,11 @@
       <a class="iss" href="https://ligiasab.github.io/Mapa-per-capita-ISS-Parana-2025/">ISS ↗</a>
       <a class="icms" href="https://ligiasab.github.io/Mapa-per-capita-ICMS-repasses-Paran-2025/">ICMS ↗</a></div>
   </section>
+
+  <a class="podcast" href="https://www.youtube.com/user/sinafresp" title="Podcast Conexão Fiscal no YouTube">
+    <img src="conexao_fiscal.png" width="223" height="80" alt="Podcast Conexão Fiscal">
+    <span>Ouça o podcast <strong>Conexão Fiscal</strong>, do Fisco Paulista ↗</span>
+  </a>
 
   <footer>Lígia Regina Sabaraense · Auditora Fiscal da Receita Estadual de São Paulo</footer>
 </main>
